@@ -72,7 +72,7 @@
 - once done if you want to install Google Apps press yes on the screen if not press no `(Play store, Gmail, Youtube, Drive, etc.)`
   - look here: https://wiki.lineageos.org/gapps/
  
-- now say reboot system now
+- now press reboot system now
 ### Enjoy LineageOS!
 
 # Return back to stock
