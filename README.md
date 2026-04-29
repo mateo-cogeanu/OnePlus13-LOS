@@ -55,4 +55,26 @@
   ```sh
   fastboot flash recovery recovery.img
   ```
+- we wipe super
+  ```sh
+  fastboot wipe-super super_empty.img
+
+- with the volume keys find `Recovery mode`
+  - press the power button to confirm
+- press Wipe data factory reset
+- go to Apply update and then apply from ADB `(Android Debug Bridge)`
+- unplug and replug your USB cable
+- and now we flash LineageOS!
+
+  ```sh
+  adb -d sideload lineage-23.2-*-nightly-dodge-signed.zip
+  ```
+- once done if you want to install Google Apps press yes on the screen if not press no `(Play store, Gmail, Youtube, Drive, etc.)`
+  - look here: https://wiki.lineageos.org/gapps/
+ 
+- now say reboot system now
+### Enjoy LineageOS!
+
+# Return back to stock
+WIP
 
