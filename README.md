@@ -4,6 +4,7 @@
 - Make sure your OnePlus 13 has USB debugging and OEM Unlocking
   - Open Settings -> About device -> Version -> Tap 7 times on the version number and enter your password/pattern
   - Settings -> System & Update -> Developer Options -> OEM Unlocking ✓ USB Debugging ✓
+- Plug your phone into yor PC
 - reboot to fastboot with:
   ```sh
   adb reboot bootloader
@@ -76,5 +77,43 @@
 ### Enjoy LineageOS!
 
 # Return back to OxygenOS
-*test*
+- Download from here: https://danielspringer.at/index.php?dir=Oneplus+13%2FRegional+Flashers
+  - Pick your region `(eg. EU, IN, Global, Etc.)`
+  - and download the top leftmost version
+- Once downloaded unzip the file.
+- On the phone go to Settings -> About phone -> Tap Build number 7 times -> Go back, System -> Developer Options -> USB debugging ✓
+- Plug your OnePlus 13 in your PC and run this to go into the bootloader
+  ```sh
+  adb reboot bootloader
+  ```
+- Once the phone is in the bootloader go to your PC and open the folder you just unzipped
+    - double click the `Regional_Flasher.bat`
+    - and follow the instrucions given on screen
+- if you are on Mac. Intel/Apple Silicon
+      - use the script given in this Repositories Releases.
+      - Once you have the script Open terminal and run the script with
+      ```sh
+      chmod +x Regional_Flasher_macos.sh
+      ```
+      - and then
+      ```sh
+      ./Regional_Flasher_macos.sh
+      ```
+      - but make sure you run the script in the folder you unzipped.
+      - again, follow the instrucions on screen.
 
+## Enjoy OxygenOS
+- if you want to lock the bootloader
+   - Open Settings -> About device -> Version -> Tap 7 times on the version number and enter your password/pattern
+   - Settings -> System & Update -> Developer Options -> USB Debugging ✓
+- Plug your phone into your pc and run:
+  ```sh
+  adb reboot bootloader
+  ```
+  once it rebooted to the bootloader run:
+  ```sh
+  fastboot flashing lock
+  ```
+  and with the volume keys you select and with power you confirm
+  Select `LOCK THE BOOTLOADER`
+### Now your phone is good as new! Enjoy!
