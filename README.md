@@ -75,6 +75,6 @@
 - now press reboot system now
 ### Enjoy LineageOS!
 
-# Return back to stock
-WIP
+# Return back to OxygenOS
+*test*
 
