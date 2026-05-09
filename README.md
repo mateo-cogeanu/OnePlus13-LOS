@@ -50,15 +50,15 @@
   ```sh
   fastboot flash dtbo dtbo.img
   ```
-- Flash Init Boot
+- Flash Init Boot. Init Boot is Android’s first helper that wakes up the phone after the kernel starts and turns on the rest of the system.
   ```sh
   fastboot flash init_boot init_boot.img
   ```
-- Flash VbMeta
+- Flash vbmeta. vbmeta is Android’s security check file that tells the phone whether its system files are trusted before booting.
   ```sh
   fastboot flash vbmeta vbmeta.img
   ```
-- Flash Vendor Boot
+- Flash Vendor Boot. vendor_boot gives Android device makers their own startup files (like extra drivers) to work with Google's standard kernel.
   ```sh
   fastboot flash vendor_boot vendor_boot.img
   ```
@@ -67,11 +67,11 @@
   fastboot reboot bootloader
   ```
 
-- Now we flash Recovery
+- Now we flash Recovery. Recovery is Android's fix-it mode you boot into to update, reset, or repair your phone when it won't start normally.
   ```sh
   fastboot flash recovery recovery.img
   ```
-- we wipe super
+- we wipe super. Super is a giant storage bucket that holds several Android system parts (like system and vendor) so updates can resize them easily without wasting space.
   ```sh
   fastboot wipe-super super_empty.img
 
