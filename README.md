@@ -1,6 +1,21 @@
 # OnePlus 13 - installing LineageOS
 
 ## Step 1. Preparation
+- install ADB (`Android Debug Bridge`)
+    - MacOS:
+      ```sh
+      brew install android-platform-tools
+      ```
+    - Linux:
+      ```sh
+      sudo apt install android-tools-adb android-tools-fastboot
+      ```
+    - Windows:
+      Download from:
+      ```html
+      https://dl.google.com/android/repository/platform-tools-latest-windows.zip
+      ```
+      and then unzip
 - Make sure your OnePlus 13 has USB debugging and OEM Unlocking
   - Open Settings -> About device -> Version -> Tap 7 times on the version number and enter your password/pattern
   - Settings -> System & Update -> Developer Options -> OEM Unlocking ✓ USB Debugging ✓
