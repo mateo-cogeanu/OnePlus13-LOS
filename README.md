@@ -42,11 +42,11 @@
 - here are the downloads for all the files: https://download.lineageos.org/devices/dodge/builds
 - once you have them all run theese commands in order
 
-- Flash boot
+- Flash boot. This will flash the boot partition that helps the phone boot into the small linux kernel 
   ```sh
   fastboot flash boot boot.img
   ```
-- Flash DTBO
+- Flash DTBO. Device Tree Blob for Overlay lets android's bootloader apply a hardware specific overlay so the kernel can boot correctly for the specific phone
   ```sh
   fastboot flash dtbo dtbo.img
   ```
